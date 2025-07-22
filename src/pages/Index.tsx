@@ -5,14 +5,14 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-soft-pink/20 via-soft-blue/20 to-soft-green/20">
+    <div className="min-h-screen bg-gradient-to-br from-science-blue/10 via-science-purple/5 to-science-green/10">
       {/* Header */}
       <header className="sticky top-0 bg-white/80 backdrop-blur-md border-b border-soft-pink/20 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <Icon name="Sparkles" className="h-8 w-8 text-primary" />
-              <h1 className="text-xl font-comfortaa font-bold text-gray-800">Клуб Развития</h1>
+              <Icon name="GraduationCap" className="h-8 w-8 text-primary" />
+              <h1 className="text-xl font-comfortaa font-bold text-gray-800">Клуб Науки</h1>
             </div>
             <nav className="hidden md:flex items-center space-x-8 font-open-sans">
               <a href="#program" className="text-gray-600 hover:text-primary transition-colors">Программа</a>
@@ -31,25 +31,25 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <Badge className="mb-6 bg-primary/20 text-primary border-primary/30 font-open-sans text-lg px-4 py-2">
-                Онлайн клуб для детей 9-14 лет
+                🔬 Онлайн лаборатория знаний для детей 9-14 лет
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-comfortaa font-bold text-gray-800 mb-6 leading-tight">
-                Всестороннее развитие 
+                Научные открытия 
                 <br />
-                <span className="text-primary">в дружелюбной атмосфере</span>
+                <span className="text-primary">каждую субботу</span>
               </h1>
               <p className="text-xl text-gray-600 font-open-sans mb-8">
-                10 увлекательных тем за одно занятие: от детской философии до дебатов. 
-                Никаких скучных лекций — только живое общение и познание мира!
+                10 образовательных модулей: от философии науки до искусства аргументации. 
+                Исследуем мир через книги, эксперименты и увлекательные дискуссии!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-comfortaa text-lg px-8 py-4">
-                  <Icon name="Gift" className="mr-2 h-5 w-5" />
-                  Записаться на пробное занятие
+                  <Icon name="FlaskConical" className="mr-2 h-5 w-5" />
+                  Начать исследование
                 </Button>
                 <Button variant="outline" size="lg" className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-comfortaa text-lg px-8 py-4">
-                  <Icon name="Play" className="mr-2 h-5 w-5" />
-                  Посмотреть программу
+                  <Icon name="BookOpen" className="mr-2 h-5 w-5" />
+                  Изучить программу
                 </Button>
               </div>
             </div>
@@ -57,13 +57,14 @@ const Index = () => {
             <div className="animate-scale-in">
               <div className="relative">
                 <img 
-                  src="/img/74d8b709-27b6-4818-9a31-f48b5d2a8aeb.jpg" 
-                  alt="Дети изучают новое в онлайн клубе" 
-                  className="w-full h-auto rounded-2xl shadow-2xl"
+                  src="/img/785467ad-f684-42c3-88a2-0bda76d679da.jpg" 
+                  alt="Образовательная лаборатория с научным оборудованием и книгами" 
+                  className="w-full h-auto rounded-2xl shadow-2xl border-4 border-book-gold/20"
                 />
-                <div className="absolute -top-4 -left-4 w-8 h-8 bg-primary rounded-full animate-pulse"></div>
-                <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-secondary rounded-full animate-pulse delay-300"></div>
-                <div className="absolute top-1/2 -right-2 w-4 h-4 bg-accent rounded-full animate-pulse delay-500"></div>
+                <div className="absolute -top-2 -left-2 text-3xl animate-bounce">📚</div>
+                <div className="absolute -bottom-2 -right-2 text-2xl animate-bounce delay-300">🔬</div>
+                <div className="absolute top-1/4 -right-4 text-2xl animate-pulse delay-500">🎓</div>
+                <div className="absolute bottom-1/4 -left-4 text-xl animate-pulse delay-700">⚛️</div>
               </div>
             </div>
           </div>
@@ -74,33 +75,33 @@ const Index = () => {
       <section className="py-16 bg-white/50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-soft-pink/30 hover:shadow-lg transition-all duration-300 animate-scale-in">
+            <Card className="border-science-blue/30 hover:shadow-lg transition-all duration-300 animate-scale-in bg-gradient-to-br from-book-cream/20 to-white">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Clock" className="h-8 w-8 text-primary" />
+                <div className="w-16 h-16 bg-science-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Calendar" className="h-8 w-8 text-science-blue" />
                 </div>
-                <h3 className="text-xl font-comfortaa font-bold mb-3">Каждую субботу в 12:12</h3>
-                <p className="text-gray-600 font-open-sans">4 занятия в месяц по удобному расписанию</p>
+                <h3 className="text-xl font-comfortaa font-bold mb-3">📅 Лаборатория каждую субботу</h3>
+                <p className="text-gray-600 font-open-sans">4 исследовательские сессии в месяц в 12:12</p>
               </CardContent>
             </Card>
 
-            <Card className="border-soft-blue/30 hover:shadow-lg transition-all duration-300 animate-scale-in">
+            <Card className="border-science-purple/30 hover:shadow-lg transition-all duration-300 animate-scale-in bg-gradient-to-br from-science-purple/5 to-white">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Heart" className="h-8 w-8 text-secondary" />
+                <div className="w-16 h-16 bg-science-purple/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="BookOpen" className="h-8 w-8 text-science-purple" />
                 </div>
-                <h3 className="text-xl font-comfortaa font-bold mb-3">10 тем за занятие</h3>
-                <p className="text-gray-600 font-open-sans">От философии до этикета — всё в формате живой беседы</p>
+                <h3 className="text-xl font-comfortaa font-bold mb-3">📚 10 модулей знаний</h3>
+                <p className="text-gray-600 font-open-sans">От научной философии до ораторского мастерства</p>
               </CardContent>
             </Card>
 
-            <Card className="border-soft-green/30 hover:shadow-lg transition-all duration-300 animate-scale-in">
+            <Card className="border-science-green/30 hover:shadow-lg transition-all duration-300 animate-scale-in bg-gradient-to-br from-science-green/5 to-white">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Wallet" className="h-8 w-8 text-accent" />
+                <div className="w-16 h-16 bg-science-green/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="GraduationCap" className="h-8 w-8 text-science-green" />
                 </div>
-                <h3 className="text-xl font-comfortaa font-bold mb-3">999 ₽ в месяц</h3>
-                <p className="text-gray-600 font-open-sans">Доступная стоимость качественного образования</p>
+                <h3 className="text-xl font-comfortaa font-bold mb-3">🎓 999 ₽ в месяц</h3>
+                <p className="text-gray-600 font-open-sans">Инвестиция в академическое будущее</p>
               </CardContent>
             </Card>
           </div>
@@ -112,29 +113,29 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-comfortaa font-bold text-gray-800 mb-4">
-              Что изучаем на занятиях?
+              🔬 Исследовательские модули программы
             </h2>
             <p className="text-xl text-gray-600 font-open-sans max-w-3xl mx-auto">
-              Каждая тема длится 3-5 минут в формате увлекательного диалога
+              Каждый модуль — это 3-5 минут активного познания через эксперименты мысли и научный диалог
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {[
-              { icon: "Brain", title: "Детская философия", color: "primary" },
-              { icon: "Microscope", title: "Научные факты", color: "secondary" },
-              { icon: "Palette", title: "Изучение картин", color: "accent" },
-              { icon: "BookOpen", title: "Притчи и мораль", color: "primary" },
-              { icon: "Users", title: "Биографии", color: "secondary" },
-              { icon: "Crown", title: "Этикет", color: "accent" },
-              { icon: "Type", title: "Новые слова", color: "primary" },
-              { icon: "MessageCircle", title: "Дебаты", color: "secondary" },
-              { icon: "Mic", title: "Выступления", color: "accent" },
-              { icon: "Sparkles", title: "И многое другое", color: "primary" }
+              { icon: "Brain", title: "🧠 Философия науки", color: "science-blue", emoji: "🧠" },
+              { icon: "Atom", title: "⚛️ Научные открытия", color: "science-purple", emoji: "⚛️" },
+              { icon: "Palette", title: "🎨 Искусство и культура", color: "science-orange", emoji: "🎨" },
+              { icon: "ScrollText", title: "📜 Мудрые притчи", color: "book-brown", emoji: "📜" },
+              { icon: "User", title: "👥 Великие биографии", color: "science-blue", emoji: "👥" },
+              { icon: "Crown", title: "🎩 Этикет и манеры", color: "book-gold", emoji: "🎩" },
+              { icon: "BookText", title: "📖 Словарный запас", color: "science-green", emoji: "📖" },
+              { icon: "MessageSquare", title: "💬 Искусство дебатов", color: "science-purple", emoji: "💬" },
+              { icon: "Presentation", title: "🎤 Ораторское мастерство", color: "science-orange", emoji: "🎤" },
+              { icon: "Telescope", title: "🔭 Исследовательские методы", color: "science-blue", emoji: "🔭" }
             ].map((item, index) => (
-              <Card key={index} className={`border-soft-${item.color === 'primary' ? 'pink' : item.color === 'secondary' ? 'blue' : 'green'}/30 hover:shadow-lg transition-all duration-300 transform hover:scale-105`}>
+              <Card key={index} className={`border-gray-200 hover:border-${item.color}/50 hover:shadow-lg transition-all duration-300 transform hover:scale-105 bg-gradient-to-br from-white to-gray-50/50`}>
                 <CardContent className="p-6 text-center">
-                  <div className={`w-12 h-12 bg-${item.color}/20 rounded-full flex items-center justify-center mx-auto mb-3`}>
+                  <div className={`w-12 h-12 bg-gradient-to-br from-${item.color}/20 to-${item.color}/10 rounded-full flex items-center justify-center mx-auto mb-3 border border-${item.color}/20`}>
                     <Icon name={item.icon as any} className={`h-6 w-6 text-${item.color}`} />
                   </div>
                   <h3 className="font-comfortaa font-semibold text-gray-800 text-sm leading-tight">{item.title}</h3>
@@ -292,8 +293,8 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Icon name="Sparkles" className="h-8 w-8 text-primary" />
-                <h3 className="text-xl font-comfortaa font-bold">Клуб Развития</h3>
+                <Icon name="GraduationCap" className="h-8 w-8 text-primary" />
+                <h3 className="text-xl font-comfortaa font-bold">Клуб Науки</h3>
               </div>
               <p className="text-gray-300 font-open-sans">
                 Онлайн клуб всестороннего развития для детей 9-14 лет
